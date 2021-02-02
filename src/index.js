@@ -3,12 +3,13 @@ import { Todo, TodoList } from './clases';
 import { crearTodoHtml } from './js/componentes';
 
 
-const tarea = new Todo("aprender JavaScript");
 
-const todos = new TodoList();
+const tarea = new Todo('aprender js');
 
-todos.nuevoTodo(tarea);
+export const todoList = new TodoList();
+
+todoList.nuevoTodo(tarea);
 
 crearTodoHtml(tarea);
 
-console.log(todos);
+//console.log(todoList);
