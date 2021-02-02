@@ -11,14 +11,14 @@ export class TodoList {
     }
 
     eliminarTodo(id) {
-
+        this.todo = this.todos.filter(todo => { todo.id != id })
     }
 
     marcarCompletado(id) {
 
         for (const todo of this.todos) {
 
-            console.log(id, todo.id);
+            //console.log(id, todo.id);
 
             if (todo.id == id) {
                 todo.completado = !todo.completado;
