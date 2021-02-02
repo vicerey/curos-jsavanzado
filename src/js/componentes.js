@@ -1,6 +1,2 @@
+import { todo } from '../clases/todo.class';
 import '../css/componentes.css';
-export const saludar = function(nombre) {
-
-    console.log(`hola me llamo: ${nombre} ...`);
-
-};
