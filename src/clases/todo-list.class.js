@@ -12,6 +12,7 @@ export class TodoList {
 
     eliminarTodo(id) {
         this.todo = this.todos.filter(todo => { todo.id != id })
+            //devuelve nuevo array con todos los todos menos el todo encontrado en el filtro
     }
 
     marcarCompletado(id) {
@@ -28,7 +29,7 @@ export class TodoList {
     }
 
     eliminarCompletados() {
-
+        this.todo = this.todos.filter(todo => {!todo.completado })
     }
 
 
